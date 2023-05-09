@@ -89,6 +89,7 @@ const UserForm = () => {
               <p style={{color:'red'}}>{ firstNameError }</p> :
               ''
             }
+            value={firstName}
           </Form.Group>
           <Form.Group className="mb-3" controlId='lastName'>
             <Form.Label>
@@ -100,6 +101,7 @@ const UserForm = () => {
                     <p style={{color:'red'}}>{ lastNameError }</p> :
                     ''
             }
+            value={lastName}
           </Form.Group>
           <Form.Group className="mb-3" controlId='email'>
             <Form.Label>
@@ -111,6 +113,7 @@ const UserForm = () => {
                     <p style={{color:'red'}}>{ emailError }</p> :
                     ''
             }
+            value={email}
           </Form.Group>
           <Form.Group className="mb-3" controlId='password'>
             <Form.Label>
@@ -125,6 +128,7 @@ const UserForm = () => {
                     <p style={{color:'red'}}>{ passwordError }</p> :
                     ''
             }
+            value={password}
           </Form.Group>
           <Form.Group className="mb-3" controlId='confirmPassword'>
             <Form.Label>
@@ -139,6 +143,7 @@ const UserForm = () => {
                     <p style={{color:'red'}}>{ confirmPasswordError }</p> :
                     ''
             }
+            value={confirmPassword}
           </Form.Group>
         </Form>
       </Container>
